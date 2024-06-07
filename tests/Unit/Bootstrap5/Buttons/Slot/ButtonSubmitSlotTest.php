@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Buttons\Slot;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Buttons\Slot;
 
 use Illuminate\Support\HtmlString;
-use Okipa\LaravelFormComponents\Components\Button\Submit;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Button\Submit;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class ButtonSubmitSlotTest extends TestCase
 {

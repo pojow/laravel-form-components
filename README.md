@@ -1,45 +1,41 @@
 ![Laravel Form Components illustration](/docs/laravel-form-components.png)
 <p style="text-align: center;">
-    <a href="https://github.com/Okipa/laravel-form-components/releases" title="Latest Stable Version">
-        <img src="https://img.shields.io/github/release/Okipa/laravel-form-components.svg?style=flat-square" alt="Latest Stable Version">
+    <a href="https://github.com/pojow/laravel-form-components/releases" title="Latest Stable Version">
+        <img src="https://img.shields.io/github/release/pojow/laravel-form-components.svg?style=flat-square" alt="Latest Stable Version">
     </a>
-    <a href="https://packagist.org/packages/Okipa/laravel-form-components" title="Total Downloads">
-        <img src="https://img.shields.io/packagist/dt/okipa/laravel-form-components.svg?style=flat-square" alt="Total Downloads">
+    <a href="https://packagist.org/packages/pojow/laravel-form-components" title="Total Downloads">
+        <img src="https://img.shields.io/packagist/dt/pojow/laravel-form-components.svg?style=flat-square" alt="Total Downloads">
     </a>
-    <a href="https://github.com/Okipa/laravel-form-components/actions" title="Build Status">
-        <img src="https://github.com/Okipa/laravel-form-components/actions/workflows/ci.yml/badge.svg" alt="Build Status">
+    <a href="https://github.com/pojow/laravel-form-components/actions" title="Build Status">
+        <img src="https://github.com/pojow/laravel-form-components/actions/workflows/ci.yml/badge.svg" alt="Build Status">
     </a>
-    <a href="https://coveralls.io/github/Okipa/laravel-form-components?branch=main" title="Coverage Status">
-        <img src="https://coveralls.io/repos/github/Okipa/laravel-form-components/badge.svg?branch=main" alt="Coverage Status">
+    <a href="https://coveralls.io/github/pojow/laravel-form-components?branch=main" title="Coverage Status">
+        <img src="https://coveralls.io/repos/github/pojow/laravel-form-components/badge.svg?branch=main" alt="Coverage Status">
     </a>
     <a href="/LICENSE.md" title="License: MIT">
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
     </a>
 </p>
 
+
+
+---
+### This project is a fork of [okipa/laravel-form-component](https://github.com/Okipa/laravel-form-components)
+
+---
+
 Save time and take advantage of a set of dynamical, ready-to-use and fully customizable form components.
 
-Components are Livewire compatible and can be used with the following UI frameworks:
+Components can be used with the following UI frameworks:
 * Bootstrap 5
-* Bootstrap 4
 * TailwindCSS 3 (upcoming feature)
 
-Found this package helpful? Please consider supporting my work!
-
-[![Donate](https://img.shields.io/badge/Buy_me_a-Ko--fi-ff5f5f.svg)](https://ko-fi.com/arthurlorent)
-[![Donate](https://img.shields.io/badge/Donate_on-PayPal-green.svg)](https://paypal.me/arthurlorent)
 
 ## Compatibility
 
-| Laravel           | Livewire | PHP                | Package |
-|-------------------|---|--------------------|------|
-| ^9.0 &#124; ^10.0 | ^2.0 | 8.1.* &#124; 8.2.* | ^1.2 |
-| ^8.0 &#124; ^9.0  | ^2.0 | ^8.1 &#124; ^8.2   | ^1.1 |
-| ^8.0 &#124; ^9.0  | ^2.0 | ^8.0 &#124; ^8.1   | ^1.0 |
-
-## Upgrade guide
-
-* [From okipa/laravel-bootstrap-components to okipa/laravel-form-components](/docs/upgrade-guides/from-laravel-bootstrap-components-to-laravel-form-components.md)
+| Laravel                        | PHP                             | Package |
+|--------------------------------|---------------------------------|---------|
+| ^9.0 &#124; ^10.0 &#124; ^11.0 | 8.1.* &#124; 8.2.* &#124; 8.3.* | ^1.0    |
 
 ## Usage example
 
@@ -94,7 +90,6 @@ And get these components displayed:
   * [Handle validation statuses and errors](#handle-validation-statuses-and-errors)
   * [Add captions](#add-captions)
   * [Activate multilingual mode](#activate-multilingual-mode)
-  * [Plug with livewire](#plug-with-livewire)
 * [Testing](#testing)
 * [Changelog](#changelog)
 * [Contributing](#contributing)
@@ -106,7 +101,7 @@ And get these components displayed:
 You can install the package via composer:
 
 ```bash
-composer require okipa/laravel-form-components
+composer require pojow/laravel-form-components
 ```
 
 ## Configuration
@@ -181,7 +176,7 @@ By default, this select placeholder option is selected, disabled and hidden. How
 In multiple mode, this package will take care about converting the name into an array name, so you don't have to add it manually.
 
 ```Blade
-@php($options = [1 => 'Laravel', 2 => 'Bootstrap', 3 => 'Tailwind', 4 => 'Livewire'])
+@php($options = [1 => 'Laravel', 2 => 'Bootstrap', 3 => 'Tailwind'])
 <x:form::select name="hobby" placeholder="What is your hobby prefered hobby?" :options="$options" selected="1"/>
 <x:form::select name="hobbies" :options="$options" :selected="[2, 3]" allowPlaceholderToBeSelected multiple/> {{-- You'll be able to selected the placeholder and the name will be converted to hobbies[] --}}
 ```
@@ -408,49 +403,6 @@ Activate multilingual mode on `input` and `textarea` components to benefit from 
 <x:form::textarea name="description" :locales="['fr', 'en']"/>
 ```
 
-### Plug with Livewire
-
-Form and input components are Livewire-compatible.
-
-Instead of defining a `wire:model` HTML attribute on each component you want to wire as you would do without this package, here you'll just have to define a `wire="<optional-modifier>"` HTML attribute to make this work.
-
-Each wired input component will use its own `name` attribute and convert it to a valid `wire:model="<name>"` one.
-
-```Blade
-<x:form::form wire:submit.prevent="submit">
-    <x:form::input name="name"/> {{-- Will not be wired --}}
-    <x:form::input type="email" name="email" wire/> {{-- Will bind the value from the Livewire component `$email` property with no defined Livewire modifier --}}
-    <x-form::input name="description" wire="lazy"/> {{-- Will bind the value from the Livewire component `$description` property with the the `lazy` Livewire modifier --}}
-    <x-form::submit/>
-</x:form::form>
-```
-
-Following the same logic, you also can wire input components directly from the form they are contained into.
-
-```Blade
-<x-form::form wire:submit.prevent="submit" wire>
-    <x-form::input type="email" name="email"/> {{-- Will bind the value from the Livewire component `$email` property with no defined Livewire modifier --}}
-    <x-form::input name="description" wire="lazy"/> {{-- Will bind the value from the Livewire component `$description` property with the the `lazy` Livewire modifier --}}
-    <x-form::submit/>
-</x:form::form>
-```
-
-For specific use case, you also can use the `@wire($modifier)` and the `@endwire` Blade directives to wire a group of components with a specific Livewire modifier.
-
-```Blade
-<x-form::form wire:submit.prevent="submit" wire="lazy">
-    <x-form::input name="first_name"/> {{-- Will bind the value from the Livewire component `$first_name` property with the `lazy` Livewire modifier --}}
-    @wire('debounce.150ms')
-        <x-form::input name="last_name"/> {{-- Will bind the value from the Livewire component `$last_name` property with the `debounce.150ms` Livewire modifier --}}
-    @endbind
-    @wire(null)
-        <x-form::input type="email" name="email"/> {{-- Will bind the value from the Livewire component `$email` property with no defined Livewire modifier --}}
-        <x-form::input name="description" wire="lazy"/> {{-- Will bind the value from the Livewire component `$description` property with the the `lazy` Livewire modifier --}}
-    @endbind
-    <x-form::submit/>
-</x-form::form>
-```
-
 ## Testing
 
 ```bash
@@ -472,6 +424,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Arthur LORENT](https://github.com/Okipa)
+- [Pojow](https://github.com/pojow)
 - [All Contributors](../../contributors)
 
 ## License

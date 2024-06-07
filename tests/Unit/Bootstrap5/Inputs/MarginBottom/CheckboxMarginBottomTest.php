@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\MarginBottom;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\MarginBottom;
 
-use Okipa\LaravelFormComponents\Components\Checkbox;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Checkbox;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class CheckboxMarginBottomTest extends TestCase
 {

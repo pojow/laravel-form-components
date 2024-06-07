@@ -1,14 +1,14 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Traits;
+namespace Pojow\LaravelFormComponents\Components\Traits;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
-use Okipa\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\FormBinder;
 
 trait HasValue
 {
-    public function getValue(string $locale = null): mixed
+    public function getValue(null|string $locale = null): mixed
     {
         $oldValue = $this->getOldValue($locale);
         if (isset($oldValue)) {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataComponentBinding;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataComponentBinding;
 
 use Illuminate\Foundation\Auth\User;
-use Okipa\LaravelFormComponents\Components\Checkbox;
-use Okipa\LaravelFormComponents\Components\ToggleSwitch;
-use Okipa\LaravelFormComponents\FormBinder;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Checkbox;
+use Pojow\LaravelFormComponents\Components\ToggleSwitch;
+use Pojow\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class ToggleSwitchDataComponentBindingTest extends TestCase
 {

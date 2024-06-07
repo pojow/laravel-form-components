@@ -1,8 +1,8 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Button;
+namespace Pojow\LaravelFormComponents\Components\Button;
 
-use Okipa\LaravelFormComponents\Components\Abstracts\AbstractComponent;
+use Pojow\LaravelFormComponents\Components\Abstracts\AbstractComponent;
 
 class Submit extends AbstractComponent
 {

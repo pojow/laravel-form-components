@@ -1,6 +1,6 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Abstracts;
+namespace Pojow\LaravelFormComponents\Components\Abstracts;
 
 use Closure;
 use Illuminate\Contracts\Foundation\Application;

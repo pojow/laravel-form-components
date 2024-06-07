@@ -1,12 +1,12 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests;
+namespace Pojow\LaravelFormComponents\Tests;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;
 use Illuminate\Testing\Constraints\SeeInOrder;
-use Okipa\LaravelFormComponents\LaravelFormComponentsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Pojow\LaravelFormComponents\LaravelFormComponentsServiceProvider;
 
 class TestCase extends Orchestra
 {

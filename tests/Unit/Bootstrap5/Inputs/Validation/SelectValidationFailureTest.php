@@ -1,11 +1,11 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectValidationFailureTest extends TestCase
 {

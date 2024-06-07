@@ -1,6 +1,6 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Traits;
+namespace Pojow\LaravelFormComponents\Components\Traits;
 
 trait HasFloatingLabel
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\FloatingLabel;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\FloatingLabel;
 
-use Okipa\LaravelFormComponents\Components\Textarea;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Textarea;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class TextareaFloatingLabelTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit;
+namespace Pojow\LaravelFormComponents\Tests\Unit;
 
-use Okipa\LaravelFormComponents\Components\Form;
-use Okipa\LaravelFormComponents\FormBinder;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Form;
+use Pojow\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class FormTest extends TestCase
 {
@@ -90,23 +90,5 @@ class FormTest extends TestCase
         $formBinder->shouldReceive('bindErrorBag')->once()->with('error_bag_test');
         $formBinder->shouldReceive('unbindErrorBag')->once();
         $this->renderComponent(Form::class, ['errorBag' => 'error_bag_test']);
-    }
-
-    /** @test */
-    public function it_can_bind_livewire_modifier_from_form(): void
-    {
-        $formBinder = $this->mock(FormBinder::class);
-        $formBinder->shouldReceive('bindNewLivewireModifier')->once()->with('debounce.150ms');
-        $formBinder->shouldReceive('unbindLastLivewireModifier')->once();
-        $this->renderComponent(Form::class, ['wire' => 'debounce.150ms']);
-    }
-
-    /** @test */
-    public function it_can_bind_empty_livewire_modifier_from_form(): void
-    {
-        $formBinder = $this->mock(FormBinder::class);
-        $formBinder->shouldReceive('bindNewLivewireModifier')->once()->with(null);
-        $formBinder->shouldReceive('unbindLastLivewireModifier')->once();
-        $this->renderComponent(Form::class, ['wire' => true]);
     }
 }

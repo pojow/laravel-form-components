@@ -1,11 +1,11 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
-use Okipa\LaravelFormComponents\Components\Checkbox;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Checkbox;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class CheckboxValidationFailureTest extends TestCase
 {

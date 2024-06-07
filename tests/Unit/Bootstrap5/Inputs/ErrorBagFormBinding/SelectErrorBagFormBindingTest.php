@@ -1,12 +1,12 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\ErrorBagFormBinding;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\ErrorBagFormBinding;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\FormBinder;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectErrorBagFormBindingTest extends TestCase
 {

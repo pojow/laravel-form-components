@@ -1,6 +1,6 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components;
+namespace Pojow\LaravelFormComponents\Components;
 
 class ToggleSwitch extends Checkbox
 {

@@ -6,8 +6,7 @@ return [
      * The UI framework that should be used to generate the components.
      * Can be set to:
      * - bootstrap-5
-     * - bootstrap-4
-     * - tailwind-2 (upcoming feature)
+     * - tailwind-3 (upcoming feature)
      */
     'ui' => 'bootstrap-5',
 

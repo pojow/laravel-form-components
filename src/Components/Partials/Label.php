@@ -1,8 +1,8 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Partials;
+namespace Pojow\LaravelFormComponents\Components\Partials;
 
-use Okipa\LaravelFormComponents\Components\Abstracts\AbstractComponent;
+use Pojow\LaravelFormComponents\Components\Abstracts\AbstractComponent;
 
 class Label extends AbstractComponent
 {

@@ -13,12 +13,9 @@
 </form>
 @php
     if($bind) {
-        app(Okipa\LaravelFormComponents\FormBinder::class)->unbindLastDataBatch();
+        app(Pojow\LaravelFormComponents\FormBinder::class)->unbindLastDataBatch();
     }
     if($errorBag) {
-        app(Okipa\LaravelFormComponents\FormBinder::class)->unbindErrorBag();
-    }
-    if($wire) {
-        app(Okipa\LaravelFormComponents\FormBinder::class)->unbindLastLivewireModifier();
+        app(Pojow\LaravelFormComponents\FormBinder::class)->unbindErrorBag();
     }
 @endphp

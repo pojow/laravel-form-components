@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\FloatingLabel;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\FloatingLabel;
 
-use Okipa\LaravelFormComponents\Components\Input;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Input;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class InputFloatingLabelTest extends TestCase
 {

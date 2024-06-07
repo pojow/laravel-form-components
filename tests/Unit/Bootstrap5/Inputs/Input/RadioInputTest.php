@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Input;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Input;
 
-use Okipa\LaravelFormComponents\Components\Radio;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Radio;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class RadioInputTest extends TestCase
 {

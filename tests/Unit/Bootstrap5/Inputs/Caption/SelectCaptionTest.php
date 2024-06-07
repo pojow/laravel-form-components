@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Caption;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Caption;
 
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectCaptionTest extends TestCase
 {

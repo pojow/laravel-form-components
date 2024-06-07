@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataLocaleAttribute;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataLocaleAttribute;
 
-use Okipa\LaravelFormComponents\Components\Textarea;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Textarea;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class TextareaDataLocaleAttributeTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\OldValue;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\OldValue;
 
-use Okipa\LaravelFormComponents\Components\Textarea;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Textarea;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class TextareaOldValueTest extends TestCase
 {

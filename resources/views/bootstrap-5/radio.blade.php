@@ -2,7 +2,6 @@
     $validationClass = $getValidationClass($errors);
     $errorMessage = $getErrorMessage($errors);
     $captionId = $getId() ?: $getDefaultId('radio');
-    $isWired = $componentIsWired();
 @endphp
 <div @class(['mb-3' => $marginBottom, $validationClass => $validationClass])>
     <div>
@@ -15,12 +14,11 @@
         @endphp
         <div @class(['form-check', 'form-check-inline' => $inline])>
             <input {{ $attributes->merge([
-                'wire:model' . $getComponentLivewireModifier() => $isWired && ! $hasComponentNativeLivewireModelBinding() ? $name : null,
                 'id' => $radioId,
                 'class' => 'form-check-input',
                 'name' => $name,
                 'value' => $groupValue,
-                'checked' => $isWired ? null : $checked,
+                'checked' => $checked,
                 'aria-describedby' => $caption ? $captionId . '-caption' : null,
             ]) }} type="radio">
             <x:form::partials.label :id="$radioId" class="form-check-label" :label="$groupLabel"/>

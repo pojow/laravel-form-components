@@ -1,11 +1,11 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Validation;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
-use Okipa\LaravelFormComponents\Components\Input;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Input;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class InputValidationFailureTest extends TestCase
 {

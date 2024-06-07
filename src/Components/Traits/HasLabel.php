@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Traits;
+namespace Pojow\LaravelFormComponents\Components\Traits;
 
 trait HasLabel
 {
-    public function getLabel(string|false $locale = null): string|null
+    public function getLabel(string|false|null $locale = null): string|null
     {
         if ($this->label === false) {
             return null;

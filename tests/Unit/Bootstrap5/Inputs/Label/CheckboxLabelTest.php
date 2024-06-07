@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Label;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Label;
 
-use Okipa\LaravelFormComponents\Components\Checkbox;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Checkbox;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class CheckboxLabelTest extends TestCase
 {

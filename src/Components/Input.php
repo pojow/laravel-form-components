@@ -1,22 +1,20 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components;
+namespace Pojow\LaravelFormComponents\Components;
 
 use Closure;
-use Okipa\LaravelFormComponents\Components\Abstracts\AbstractComponent;
-use Okipa\LaravelFormComponents\Components\Traits\CanBeWired;
-use Okipa\LaravelFormComponents\Components\Traits\HasAddon;
-use Okipa\LaravelFormComponents\Components\Traits\HasFloatingLabel;
-use Okipa\LaravelFormComponents\Components\Traits\HasId;
-use Okipa\LaravelFormComponents\Components\Traits\HasLabel;
-use Okipa\LaravelFormComponents\Components\Traits\HasName;
-use Okipa\LaravelFormComponents\Components\Traits\HasPlaceholder;
-use Okipa\LaravelFormComponents\Components\Traits\HasValidation;
-use Okipa\LaravelFormComponents\Components\Traits\HasValue;
+use Pojow\LaravelFormComponents\Components\Abstracts\AbstractComponent;
+use Pojow\LaravelFormComponents\Components\Traits\HasAddon;
+use Pojow\LaravelFormComponents\Components\Traits\HasFloatingLabel;
+use Pojow\LaravelFormComponents\Components\Traits\HasId;
+use Pojow\LaravelFormComponents\Components\Traits\HasLabel;
+use Pojow\LaravelFormComponents\Components\Traits\HasName;
+use Pojow\LaravelFormComponents\Components\Traits\HasPlaceholder;
+use Pojow\LaravelFormComponents\Components\Traits\HasValidation;
+use Pojow\LaravelFormComponents\Components\Traits\HasValue;
 
 class Input extends AbstractComponent
 {
-    use CanBeWired;
     use HasAddon;
     use HasFloatingLabel;
     use HasId;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\MarginBottom;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\MarginBottom;
 
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectMarginBottomTest extends TestCase
 {

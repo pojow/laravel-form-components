@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Name;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Name;
 
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectNameTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Label;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Label;
 
-use Okipa\LaravelFormComponents\Components\ToggleSwitch;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\ToggleSwitch;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class ToggleSwitchLabelTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Selected;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Selected;
 
 use Illuminate\Foundation\Auth\User;
-use Okipa\LaravelFormComponents\Components\Select;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Select;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class SelectSelectedTest extends TestCase
 {

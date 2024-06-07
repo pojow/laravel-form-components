@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Partials;
+namespace Pojow\LaravelFormComponents\Components\Partials;
 
 use Closure;
-use Okipa\LaravelFormComponents\Components\Abstracts\AbstractComponent;
+use Pojow\LaravelFormComponents\Components\Abstracts\AbstractComponent;
 
 class Addon extends AbstractComponent
 {

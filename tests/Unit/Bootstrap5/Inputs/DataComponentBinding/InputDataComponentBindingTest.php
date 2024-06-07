@@ -1,11 +1,11 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataComponentBinding;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataComponentBinding;
 
 use Illuminate\Foundation\Auth\User;
-use Okipa\LaravelFormComponents\Components\Input;
-use Okipa\LaravelFormComponents\FormBinder;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Input;
+use Pojow\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class InputDataComponentBindingTest extends TestCase
 {

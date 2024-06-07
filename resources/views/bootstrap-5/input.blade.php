@@ -9,7 +9,6 @@
         $append = $getAppend($locale);
         $errorMessage = $getErrorMessage($errors, $locale);
         $validationClass = $getValidationClass($errors, $locale);
-        $isWired = $componentIsWired();
     @endphp
     <div @class(['d-none' => $type === 'hidden', 'form-floating' => $displayFloatingLabel, 'mb-3' => $marginBottom])>
         @if(($prepend || $append) && ! $displayFloatingLabel)
@@ -22,15 +21,14 @@
             @if($prepend && ! $displayFloatingLabel)
                 <x:form::partials.addon :addon="$prepend"/>
             @endif
-            <input {{ $attributes->except('wire')->merge([
-                'wire:model' . $getComponentLivewireModifier() => $isWired && ! $hasComponentNativeLivewireModelBinding() ? ($locale ? $name . '.' . $locale : $name) : null,
+            <input {{ $attributes->merge([
                 'id' => $id,
                 'class' => 'form-control' . ($validationClass ? ' ' . $validationClass : null),
                 'type' => $type,
                 'name' => $locale ? $name . '[' . $locale . ']' : $name,
                 'placeholder' => $placeholder,
                 'data-locale' => $locale,
-                'value' => $isWired ? null : ($value ?? ''),
+                'value' => $value ?? '',
                 'aria-describedby' => $caption ? $id . '-caption' : null,
             ]) }}/>
             @if(! $prepend && ! $append && $displayFloatingLabel)

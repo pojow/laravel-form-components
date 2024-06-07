@@ -1,11 +1,11 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataFormBinding;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\DataFormBinding;
 
 use Illuminate\Foundation\Auth\User;
-use Okipa\LaravelFormComponents\Components\Radio;
-use Okipa\LaravelFormComponents\FormBinder;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Radio;
+use Pojow\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class RadioDataFormBindingTest extends TestCase
 {

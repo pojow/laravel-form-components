@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Buttons\Classes;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Buttons\Classes;
 
 use Illuminate\Support\HtmlString;
-use Okipa\LaravelFormComponents\Components\Button\Link;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Button\Link;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class ButtonLinkClassesTest extends TestCase
 {

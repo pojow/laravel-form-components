@@ -1,10 +1,10 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Value;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Value;
 
 use Illuminate\Foundation\Auth\User;
-use Okipa\LaravelFormComponents\Components\Textarea;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Textarea;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class TextareaValueTest extends TestCase
 {

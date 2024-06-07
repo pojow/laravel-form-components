@@ -1,8 +1,8 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Traits;
+namespace Pojow\LaravelFormComponents\Components\Traits;
 
-use Okipa\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\FormBinder;
 
 trait CanBeChecked
 {

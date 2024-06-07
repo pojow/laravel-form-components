@@ -5,7 +5,6 @@
     }
     $errorMessage = $getErrorMessage($errors);
     $validationClass = $getValidationClass($errors);
-    $isWired = $componentIsWired();
 @endphp
 @if($groupMode)
     <div @class(['mb-3' => $marginBottom])>
@@ -22,12 +21,11 @@
     @endphp
     <div @class(['form-check', 'form-switch' => $toggleSwitch, 'form-check-inline' => $inline, 'mb-3' => $groupMode ? null : $marginBottom])>
         <input {{ $attributes->merge([
-            'wire:model' . $getComponentLivewireModifier() => $isWired && ! $hasComponentNativeLivewireModelBinding() ? $name : null,
             'id' => $id,
             'class' => 'form-check-input' . ($validationClass ? ' ' . $validationClass : null),
             'name' => $name . ($groupMode ? '[]' : null),
             'value' => $groupMode ? $groupValue : null,
-            'checked' => $isWired ? null : $checked,
+            'checked' => $checked,
             'aria-describedby' => $caption ? ($groupMode && $caption ? $captionId : $id) . '-caption' : null,
         ]) }} type="checkbox">
         <x:form::partials.label :id="$id" class="form-check-label" :label="$label"/>

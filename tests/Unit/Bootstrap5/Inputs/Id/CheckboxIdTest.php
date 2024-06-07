@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Id;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Id;
 
-use Okipa\LaravelFormComponents\Components\Checkbox;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Checkbox;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class CheckboxIdTest extends TestCase
 {

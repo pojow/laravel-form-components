@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\OldValue;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\OldValue;
 
-use Okipa\LaravelFormComponents\Components\ToggleSwitch;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\ToggleSwitch;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class ToggleSwitchOldValueTest extends TestCase
 {

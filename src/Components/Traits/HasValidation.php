@@ -1,14 +1,14 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Components\Traits;
+namespace Pojow\LaravelFormComponents\Components\Traits;
 
 use Illuminate\Contracts\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
-use Okipa\LaravelFormComponents\FormBinder;
+use Pojow\LaravelFormComponents\FormBinder;
 
 trait HasValidation
 {
-    public function getValidationClass(ViewErrorBag $errors, string $locale = null): string|null
+    public function getValidationClass(ViewErrorBag $errors, null|string $locale = null): string|null
     {
         $errorBag = $this->getErrorBag($errors);
         if ($errorBag->isEmpty()) {
@@ -47,7 +47,7 @@ trait HasValidation
         return $this->displayValidationSuccess ?? config('form-components.display_validation_success', true);
     }
 
-    public function getErrorMessage(ViewErrorBag $errors, string $locale = null): string|null
+    public function getErrorMessage(ViewErrorBag $errors, null|string $locale = null): string|null
     {
         if (! $this->shouldDisplayValidationFailure()) {
             return null;

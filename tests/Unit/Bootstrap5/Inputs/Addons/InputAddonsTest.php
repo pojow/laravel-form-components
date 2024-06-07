@@ -1,9 +1,9 @@
 <?php
 
-namespace Okipa\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Addons;
+namespace Pojow\LaravelFormComponents\Tests\Unit\Bootstrap5\Inputs\Addons;
 
-use Okipa\LaravelFormComponents\Components\Input;
-use Okipa\LaravelFormComponents\Tests\TestCase;
+use Pojow\LaravelFormComponents\Components\Input;
+use Pojow\LaravelFormComponents\Tests\TestCase;
 
 class InputAddonsTest extends TestCase
 {
