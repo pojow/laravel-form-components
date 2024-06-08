@@ -20,7 +20,7 @@
 
 
 ---
-### This project is a fork of [okipa/laravel-form-component](https://github.com/Okipa/laravel-form-components)
+### This project is a maitained fork of [okipa/laravel-form-components](https://github.com/Okipa/laravel-form-components)
 
 ---
 
